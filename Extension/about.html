@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Deepfake Detector</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="logo-svg"
+        >
+          <circle
+            cx="20"
+            cy="20"
+            r="19"
+            stroke="url(#paint0_linear)"
+            stroke-width="2"
+          />
+          <path
+            d="M20 10V30"
+            stroke="url(#paint1_linear)"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M10 20H30"
+            stroke="url(#paint2_linear)"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M13 13L27 27"
+            stroke="url(#paint3_linear)"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M27 13L13 27"
+            stroke="url(#paint4_linear)"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear"
+              x1="10"
+              y1="10"
+              x2="30"
+              y2="30"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3B82F6" />
+              <stop offset="1" stop-color="#8B5CF6" />
+            </linearGradient>
+            <linearGradient
+              id="paint1_linear"
+              x1="20"
+              y1="10"
+              x2="20"
+              y2="30"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3B82F6" />
+              <stop offset="1" stop-color="#EC4899" />
+            </linearGradient>
+            <linearGradient
+              id="paint2_linear"
+              x1="10"
+              y1="20"
+              x2="30"
+              y2="20"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#8B5CF6" />
+              <stop offset="1" stop-color="#F59E0B" />
+            </linearGradient>
+            <linearGradient
+              id="paint3_linear"
+              x1="13"
+              y1="13"
+              x2="27"
+              y2="27"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#EC4899" />
+              <stop offset="1" stop-color="#3B82F6" />
+            </linearGradient>
+            <linearGradient
+              id="paint4_linear"
+              x1="27"
+              y1="13"
+              x2="13"
+              y2="27"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#F59E0B" />
+              <stop offset="1" stop-color="#8B5CF6" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>Deepfake Detector</span>
+      </div>
+      <div class="nav-buttons">
+        <button id="dashboardBtn">Dashboard</button>
+        <button id="historyBtn">History</button>
+        <button id="aboutBtn">About</button>
+      </div>
+    </header>
+
+    <div class="content-container">
+      <section class="about-section">
+        <h1 class="section-title">About Our Deepfake Detector</h1>
+        <p class="lead-text">
+          Our browser extension harnesses cutting-edge AI technology to detect
+          manipulated media in real-time, protecting you from the growing threat
+          of deepfakes across the web.
+        </p>
+
+        <p>
+          In today's digital landscape, the proliferation of synthetic
+          media—particularly deepfakes—poses unprecedented challenges to
+          information integrity and online trust. Our Deepfake Detector
+          extension provides a critical first line of defense, empowering users
+          to verify the authenticity of digital content with a single click.
+        </p>
+
+        <p>
+          Using a sophisticated multi-layered detection approach, our tool can
+          identify subtle inconsistencies and artifacts that even the human eye
+          might miss, helping users make informed decisions about the content
+          they consume and share.
+        </p>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="icon-container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#3b82f6"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M2 12a10 10 0 1 0 20 0 10 10 0 1 0-20 0zm14-1-6 6m0-6 6 6"
+                />
+              </svg>
+            </div>
+            <h3>AI-Powered Detection</h3>
+            <p>
+              Our extension leverages a state-of-the-art convolutional neural
+              network (CNN) trained on diverse datasets of authentic and
+              manipulated media, achieving over 97% accuracy in controlled
+              tests.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="icon-container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#3b82f6"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                <line x1="12" y1="17" x2="12.01" y2="17" />
+              </svg>
+            </div>
+            <h3>Real-Time Analysis</h3>
+            <p>
+              Get instant feedback on images and videos as you browse, with
+              visual indicators that highlight potentially manipulated regions
+              for deeper inspection.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="icon-container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#3b82f6"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3>Privacy-Focused</h3>
+            <p>
+              All analysis happens locally within your browser—no images or
+              videos are uploaded to external servers, ensuring your data
+              remains private and secure.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="workflow-section">
+        <div class="bg-element bg-element-1"></div>
+        <div class="bg-element bg-element-2"></div>
+
+        <h2 class="section-title">How Our Technology Works</h2>
+        <p class="lead-text">
+          Our deepfake detection extension employs a sophisticated multi-stage
+          analysis pipeline to identify manipulated media with high precision.
+        </p>
+
+        <div class="workflow-steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Media Capture & Preprocessing</h3>
+              <p>
+                When activated, our extension captures the current image or
+                video frame and preprocesses it for analysis. This includes
+                normalization, resizing, and enhancement to optimize detection
+                accuracy.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Feature Extraction</h3>
+              <p>
+                Our algorithm extracts critical visual features using a
+                <span class="highlight">custom EfficientNet architecture</span>.
+                This includes analysis of facial landmarks, texture patterns,
+                compression artifacts, and biometric inconsistencies that
+                commonly appear in synthetic media.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Multi-Model Analysis</h3>
+              <p>
+                The extracted features are passed through multiple specialized
+                detection models, each focusing on different manipulation
+                techniques (face-swapping, expression manipulation, voice
+                synthesis, etc.). This ensemble approach provides comprehensive
+                coverage against various deepfake methods.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h3>Anomaly Localization</h3>
+              <p>
+                Our system generates a detailed heatmap highlighting regions
+                with detected inconsistencies, allowing users to visualize
+                exactly which parts of the media appear manipulated. This
+                spatial localization helps distinguish between intentional edits
+                and malicious deepfakes.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <h3>Confidence Assessment</h3>
+              <p>
+                Results are presented with a confidence score based on the
+                cumulative findings from all detection layers. This provides
+                users with a clear measure of certainty and helps avoid false
+                positives while maintaining high detection sensitivity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section">
+        <h2 class="section-title">Why Deepfake Detection Matters</h2>
+        <p class="lead-text">
+          As synthetic media technology becomes more accessible and
+          sophisticated, the ability to verify digital content authenticity has
+          become essential for maintaining trust in our information ecosystem.
+        </p>
+
+        <p>Deepfakes present serious threats across multiple domains:</p>
+
+        <ul
+          style="list-style-type: disc; padding-left: 2rem; margin-bottom: 2rem"
+        >
+          <li style="margin-bottom: 0.75rem">
+            <strong>Misinformation Campaigns</strong> - Manipulated videos of
+            public figures can spread dangerous falsehoods at unprecedented
+            speed
+          </li>
+          <li style="margin-bottom: 0.75rem">
+            <strong>Personal Reputation Damage</strong> - Synthetic media can be
+            weaponized for harassment, blackmail, or character assassination
+          </li>
+          <li style="margin-bottom: 0.75rem">
+            <strong>Financial Fraud</strong> - Deepfake voice synthesis has
+            already been used in multiple high-profile fraud cases
+          </li>
+          <li style="margin-bottom: 0.75rem">
+            <strong>Electoral Integrity</strong> - Manufactured content can
+            undermine democratic processes and public trust
+          </li>
+        </ul>
+
+        <p>
+          By integrating our detector directly into your browsing experience, we
+          provide a frictionless solution that helps restore confidence in
+          digital media consumption. Our technology serves as both a protective
+          shield and an educational tool, raising awareness about digital
+          manipulation while providing practical safeguards.
+        </p>
+      </section>
+    </div>
+
+    <script src="about.js"></script>
+  </body>
+</html>
