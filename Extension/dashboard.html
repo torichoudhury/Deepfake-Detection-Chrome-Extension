@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deepfake Detection Dashboard</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="logo-svg"
+        >
+          <circle
+            cx="20"
+            cy="20"
+            r="19"
+            stroke="url(#paint0_linear)"
+            stroke-width="2"
+          />
+          <path
+            d="M20 10V30"
+            stroke="url(#paint1_linear)"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M10 20H30"
+            stroke="url(#paint2_linear)"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M13 13L27 27"
+            stroke="url(#paint3_linear)"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M27 13L13 27"
+            stroke="url(#paint4_linear)"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear"
+              x1="10"
+              y1="10"
+              x2="30"
+              y2="30"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3B82F6" />
+              <stop offset="1" stop-color="#8B5CF6" />
+            </linearGradient>
+            <linearGradient
+              id="paint1_linear"
+              x1="20"
+              y1="10"
+              x2="20"
+              y2="30"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3B82F6" />
+              <stop offset="1" stop-color="#EC4899" />
+            </linearGradient>
+            <linearGradient
+              id="paint2_linear"
+              x1="10"
+              y1="20"
+              x2="30"
+              y2="20"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#8B5CF6" />
+              <stop offset="1" stop-color="#F59E0B" />
+            </linearGradient>
+            <linearGradient
+              id="paint3_linear"
+              x1="13"
+              y1="13"
+              x2="27"
+              y2="27"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#EC4899" />
+              <stop offset="1" stop-color="#3B82F6" />
+            </linearGradient>
+            <linearGradient
+              id="paint4_linear"
+              x1="27"
+              y1="13"
+              x2="13"
+              y2="27"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#F59E0B" />
+              <stop offset="1" stop-color="#8B5CF6" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>Deepfake Detector</span>
+      </div>
+      <div class="nav-buttons">
+        <button id="dashboardBtn">Dashboard</button>
+        <button id="historyBtn">History</button>
+        <button id="aboutBtn">About</button>
+      </div>
+    </header>
+
+    <h1 class="page-title">Overall Detection Metrics</h1>
+
+    <div class="dashboard-grid">
+      <!-- Main Image -->
+      <div class="card large-card">
+        <div class="relative">
+          <img id="originalImage" alt="Original image" />
+          <span class="deepfake-label absolute top-4 left-4"
+            >Deepfake Detected</span
+          >
+        </div>
+      </div>
+
+      <!-- Prediction Details -->
+      <div class="card">
+        <h2>Prediction Details</h2>
+        <p class="fake"></p>
+        <p class="confidence"></p>
+      </div>
+
+      <!-- Heat Map -->
+      <div class="card">
+        <h2>Heat Map</h2>
+        <div class="image-container">
+          <img id="heatMap" alt="Heat map" />
+        </div>
+      </div>
+
+      <!-- Localized Image -->
+      <div class="card">
+        <h2>Localized Image</h2>
+        <div class="image-container">
+          <img id="localizedImage" alt="Localized Image" />
+        </div>
+      </div>
+
+      <!-- Upload Another Image -->
+      <div class="card">
+        <button class="upload-btn image-upload">
+          <span class="plus-icon">+</span>
+          <span>Add another image to analyze</span>
+        </button>
+      </div>
+
+      <!-- Audio Analysis Section -->
+      <div class="card">
+        <h2>Audio Analysis</h2>
+        <div class="audio-container">
+          <audio id="audioPlayer" controls></audio>
+          <div class="audio-stats">
+            <p class="audio-fake"></p>
+            <p class="audio-confidence"></p>
+          </div>
+          <div class="waveform-container">
+            <canvas id="waveformCanvas"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Audio Features -->
+      <!-- <div class="card">
+        <h2>Audio Features</h2>
+        <div class="feature-grid">
+          <div class="feature">
+            <span>Pitch Consistency</span>
+            <div class="progress-bar">
+              <div id="pitchBar" class="progress"></div>
+            </div>
+          </div>
+          <div class="feature">
+            <span>Voice Naturalness</span>
+            <div class="progress-bar">
+              <div id="naturalBar" class="progress"></div>
+            </div>
+          </div>
+          <div class="feature">
+            <span>Background Noise</span>
+            <div class="progress-bar">
+              <div id="noiseBar" class="progress"></div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- Upload Buttons -->
+      <div class="card">
+        <div class="upload-buttons">
+          <button class="upload-btn audio-upload">
+            <span class="plus-icon">+</span>
+            <span>Add audio to analyze</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+  </body>
+</html>
