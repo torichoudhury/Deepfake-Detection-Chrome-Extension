@@ -2,7 +2,7 @@
   <img src="icon.png.png" alt="Deepfake Extension Logo" width="200">
 </p>
 
-# 🚀 Deepfake Detection Chrome Extension
+# SentinelAI 🚀 (Deepfake Detection Chrome Extension)
 
 🔍 Detect Deepfakes in Real-Time
 
