@@ -44,8 +44,8 @@ DEEPFAKE_EXTENSION/
 ## 🚀 Installation & Setup
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/your-repo/deepfake-extension.git
-cd deepfake-extension
+git clone https://github.com/torichoudhury/Deepfake-Detection-Chrome-Extension.git
+
 ```
 ### 2️⃣ Install Dependencies
 ```sh
