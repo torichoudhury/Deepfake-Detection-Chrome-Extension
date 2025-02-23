@@ -61,7 +61,7 @@ pip install -r requirements.txt
 
 ## 🎯 Features
 ✅ **Scans Webpages in Real-Time**
-✅ **Detects AI-Generated Fake Media** (Images, Audio, and Videos)
+✅ **Detects AI-Generated Fake Media** (Images and Audio)
 ✅ **User-Friendly Dashboard**
 ✅ **Uses Advanced Deep Learning Models**
 
@@ -69,9 +69,8 @@ pip install -r requirements.txt
 
 ## 🎮 How to Use
 1. Click on the extension icon in Chrome
-2. The extension will **analyze media on the page**
-3. If deepfake content is detected, you’ll get an **alert with details**
-4. View history of scans in the **dashboard**
+2. The extension will **analyze media on the page by using a snipping tool**
+3. View history of scans in the **dashboard**
 
 ---
 
